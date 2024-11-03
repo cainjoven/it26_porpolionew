@@ -1,0 +1,369 @@
+   * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+
+
+
+   }
+
+   body {
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: #000000;
+     line-height: 1.6;
+
+
+
+   }
+
+   header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #111;
+
+
+
+
+   }
+
+
+   .logo {
+     display: flex;
+     color: #ff0000;
+     padding-right: 600px;
+     margin: 10px
+   }
+
+   .navbar {
+     display: flex;
+     padding: 0;
+     margin: 0;
+     width: 100%;
+
+
+
+
+
+
+   }
+
+   .navbar ul {
+     display: flex;
+     list-style-type: none;
+
+
+
+
+
+   }
+
+
+   .navbar li {
+     padding: 10px;
+     margin: 10px;
+
+
+
+
+   }
+
+
+   .navbar a {
+     display: flex;
+     color: #ffffff;
+     text-decoration: none;
+     padding: 10px 15px;
+
+
+
+
+
+   }
+
+   .navbar a:hover {
+     background-color: #ff0000;
+     color: #ffffff;
+     border-radius: 15px;
+
+
+
+   }
+
+
+
+
+
+
+   .info {
+     display: flex;
+     /* Make the cards container a flex container */
+     justify-content: center;
+     /* Center the cards horizontally */
+     align-items: center;
+     /* Center the cards vertically if needed */
+     height: 100vh;
+     /* Optional: adjust as needed */
+     border-radius: 50%;
+     color: #ffffff;
+
+
+
+
+   }
+
+   .info img {
+     display: flex;
+     align-items: center;
+     height: 300px;
+     width: 300px;
+     background-color: #555;
+     border-radius: 15%;
+     margin: 10px;
+
+
+
+   }
+
+
+   .red-text {
+     color: #ff0000;
+     /* or any shade of red you prefer */
+   }
+
+   .grey-text {
+     color: #f5f5f5;
+
+   }
+
+
+   .txt-container {
+     display: flex;
+     /* Make the cards container a flex container */
+     justify-content: center;
+     /* Center the cards horizontally */
+     align-items: center;
+     /* Center the cards vertically if needed */
+     border-radius: 50%;
+     color: #ffffff;
+     flex-direction: column;
+
+   }
+
+
+   .container-info {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+
+
+
+   }
+
+   #gallery {
+     text-align: center;
+     padding: 20px;
+   }
+
+   .gallery-container {
+     display: flex;
+     flex-wrap: wrap;
+     /* Allows cards to wrap onto a new line if needed */
+     gap: 20px;
+     /* Adds space between cards */
+     justify-content: center;
+     /* Centers the cards in the container */
+   }
+
+   .card {
+     background-color: #111;
+     color: #fff;
+     width: 200px;
+     /* Fixed width for all cards */
+     padding: 15px;
+     border-radius: 50px;
+     text-align: center;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   }
+
+   .card img {
+     width: 100%;
+     height: 150px;
+     /* Fixed height for uniformity */
+     object-fit: cover;
+     /* Ensures the image fills the space without stretching */
+     border-radius: 8px;
+   }
+
+
+   .card:hover {
+     transform: translateY(-5px);
+
+   }
+
+   html {
+     scroll-behavior: smooth;
+   }
+
+
+
+
+
+   #about ul {
+     list-style-type: none;
+
+
+   }
+
+   section {
+     padding: 60px 20px;
+     text-align: center;
+     background-color: #ff0000;
+     margin: 20px 0;
+     border-radius: 10px;
+   }
+
+
+
+
+   footer {
+     text-align: center;
+     padding: 10px;
+     background-color: #111;
+     color: #ffffff;
+
+
+   }
+
+
+
+
+   @media (max-width: 768px) {
+     header {
+       flex-direction: column;
+       align-items: center;
+     }
+
+     .navbar ul {
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+     }
+
+     .navbar li {
+       margin: 5px 0;
+     }
+
+     .container-info {
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+     }
+
+     .info {
+       margin: 0 0 20px 0;
+     }
+
+     .info img {
+       height: 300px;
+       width: 300px;
+     }
+
+     .logo {
+       display: flex;
+       color: #ff0000;
+       padding-right: 600px;
+       margin: 10px
+     }
+
+
+
+
+   }
+
+   /* Mobile screens (max-width: 480px) */
+   @media (max-width: 480px) {
+     body {
+       font-size: 0.9rem;
+     }
+
+     .logo {
+       font-size: 1.2rem;
+     }
+
+     .navbar ul {
+       width: 100%;
+     }
+
+     .navbar li {
+       padding: 5px;
+     }
+
+     .container-info {
+       padding: 10px;
+     }
+
+     .info img {
+       height: 200px;
+       width: 200px;
+     }
+
+     footer {
+       padding: 15px;
+       font-size: 0.8rem;
+     }
+
+     section {
+       padding: 60px 20px;
+       text-align: center;
+       background-color: #ff0000;
+       margin: 20px 0;
+       border-radius: 10px;
+     }
+
+     /* Gallery Section */
+     #gallery {
+       padding: 20px;
+       background-color: #f9f9f9;
+       text-align: center;
+     }
+
+     .gallery-container {
+       display: flex;
+       flex-wrap: wrap;
+       /* Allows cards to wrap onto a new line if needed */
+       gap: 20px;
+       /* Adds space between cards */
+       justify-content: center;
+       /* Centers the cards in the container */
+     }
+
+     /* Gallery Card */
+     .card {
+       background-color: #fff;
+       border-radius: 10px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       overflow: hidden;
+       transition: transform 0.3s ease;
+     }
+
+     .card:hover {
+       transform: translateY(-5px);
+     }
+
+     .card img {
+       width: 100%;
+       height: auto;
+       display: block;
+     }
+
+     .card p {
+       padding: 10px;
+       font-size: 1rem;
+       color: #333;
+     }
+
+
+
+   }
